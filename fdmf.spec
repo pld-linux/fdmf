@@ -2,7 +2,7 @@
 Summary:	FDMF - find duplicate music files
 Name:		fdmf
 Version:	0.0.9j
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Applications/Sound
 URL:		http://www.w140.com/audio/
@@ -13,8 +13,10 @@ BuildRequires:	gdbm-devel
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	fftw3
 Requires:	gdbm
-Requires:	mpg321
+Requires:	mpg123
+Requires:	ogg123
 Requires:	openssl-tools
+Requires:	plotutils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
