@@ -14,6 +14,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	fftw3
 Requires:	gdbm
 Requires:	mpg321
+Requires:	openssl-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -39,5 +40,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES README
+%doc CHANGES INSTALL README
 %attr(755,root,root) %{_bindir}/*
