@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	FDMF - find duplicate music files
-Summary(pl.UTF-8):   FDMF - szukanie duplikatów plików muzycznych
+Summary(pl.UTF-8):	FDMF - szukanie duplikatów plików muzycznych
 Name:		fdmf
 Version:	0.0.9q
 Release:	0.1
