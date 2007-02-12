@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	FDMF - find duplicate music files
-Summary(pl):	FDMF - szukanie duplikatów plików muzycznych
+Summary(pl.UTF-8):   FDMF - szukanie duplikatÃ³w plikÃ³w muzycznych
 Name:		fdmf
 Version:	0.0.9q
 Release:	0.1
@@ -26,11 +26,11 @@ dmf is portable Perl/C software for finding pairs of music files in a
 collection that are likely to contain the same music. It works on the
 music itself, not on the filename, tags, or headers.
 
-%description -l pl
-dmf to przeno¶ny program w Perlu/C do znajdowania w swojej kolekcji
-par plików muzycznych, które najprawdopodobniej zawieraj± tê sam±
-muzykê. Porównuje sam± muzykê, a nie nazwê pliku, znaczniki czy
-nag³ówki.
+%description -l pl.UTF-8
+dmf to przenoÅ›ny program w Perlu/C do znajdowania w swojej kolekcji
+par plikÃ³w muzycznych, ktÃ³re najprawdopodobniej zawierajÄ… tÄ™ samÄ…
+muzykÄ™. PorÃ³wnuje samÄ… muzykÄ™, a nie nazwÄ™ pliku, znaczniki czy
+nagÅ‚Ã³wki.
 
 %prep
 %setup -q
