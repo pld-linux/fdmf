@@ -2,23 +2,20 @@
 Summary:	FDMF - find duplicate music files
 Summary(pl.UTF-8):	FDMF - szukanie duplikatów plików muzycznych
 Name:		fdmf
-Version:	0.0.9q
-Release:	0.1
-License:	GPL
+Version:	0.0.9r
+Release:	1
+License:	GPL v2
 Group:		Applications/Sound
 Source0:	http://www.w140.com/audio/%{name}-%{version}.tar.gz
-# Source0-md5:	10fa68d4b4c14f4b65ae526c17b02f6d
+# Source0-md5:	1d79911c83605a68573d0a2ea8a01d18
 URL:		http://www.w140.com/audio/
 BuildRequires:	fftw3-devel
 BuildRequires:	gdbm-devel
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	fftw3
-Requires:	gdbm
-Requires:	mpg123
-Requires:	ogg123
-Requires:	openssl-tools
 Requires:	plotutils
-Requires:	perl-GDBM_File
+Suggests:	mpg123
+Suggests:	mplayer
+Suggests:	vorbis-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -51,4 +48,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES INSTALL README
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/cleanup_dups
+%attr(755,root,root) %{_bindir}/fdmf
+%attr(755,root,root) %{_bindir}/fdmf_bench
+%attr(755,root,root) %{_bindir}/optparam
+%attr(755,root,root) %{_bindir}/sonic_reducer
+%attr(755,root,root) %{_bindir}/vector_pairs
