@@ -13,8 +13,8 @@ BuildRequires:	fftw3-devel
 BuildRequires:	gdbm-devel
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	plotutils
+Requires:	mplayer
 Suggests:	mpg123
-Suggests:	mplayer
 Suggests:	vorbis-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
